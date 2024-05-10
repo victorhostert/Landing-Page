@@ -1,8 +1,7 @@
-version: '3.8'
-
 services:
   app:
     image: ghcr.io/all-right-consultoria/landing-page-app:latest
+    pull_policy: always
     command: gunicorn allright.wsgi:application --bind 0.0.0.0:8000
     restart: unless-stopped
     volumes:
@@ -16,6 +15,7 @@ services:
 
   nginx:
     image: ghcr.io/all-right-consultoria/landing-page-nginx:latest
+    pull_policy: always
     volumes:
       - static_volume:/home/app/web/assets
       - media_volume:/home/app/web/media
