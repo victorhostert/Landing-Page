@@ -1,18 +1,12 @@
 pipeline {
     agent any
     environment {
-        BRANCH='dev'
         REPO='https://github.com/all-right-consultoria/all-right-landing-page'
         REGISTRY_URL='https://ghcr.io'
         IMAGE_APP='ghcr.io/all-right-consultoria/landing-page-app'
         IMAGE_NGINX='ghcr.io/all-right-consultoria/landing-page-nginx'
     }
     stages {
-        stage('checkout') {
-            steps {
-                git branch: env.BRANCH, url: env.REPO
-            }
-        }
         stage('build & push') {
             steps {
                 script {
