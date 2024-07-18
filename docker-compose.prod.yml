@@ -19,8 +19,8 @@ services:
     volumes:
       - static_volume:/home/app/web/assets
       - media_volume:/home/app/web/media
-      - "$(readlink -f /etc/letsencrypt/live/allright-consultoria.com.br/fullchain.pem)":/etc/nginx/ssl/fullchain.pem
-      - "$(readlink -f /etc/letsencrypt/live/allright-consultoria.com.br/privkey.pem)":/etc/nginx/ssl/privkey.pem
+      - ${FULLCHAIN_PATH}:/etc/nginx/ssl/fullchain.pem
+      - ${PRIVKEY_PATH}:/etc/nginx/ssl/privkey.pem
     ports:
      - "80:80"
      - "443:443"
