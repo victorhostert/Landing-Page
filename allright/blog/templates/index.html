@@ -23,7 +23,7 @@
                     </span>
                 </h3>
                 <div class="nossos-cases">
-                    <a href="#cadastro_contato"
+                    <a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                         class="button-link">Entre em contato!</a>
                     <a href="{% url 'cases-list' %}" class="button-link">Cases de sucesso All Right</a>
                 </div>
@@ -31,29 +31,6 @@
         </div>
     </div>
     <div class="servicos-sobre-nos">
-        <div class="cadastro_contato" id="cadastro_contato">
-            {% if enviado %}
-            <h1>Cadastro concluído!</h1>
-            <h3>Aguarde que assim que possível entraremos em contato</h3>
-            {% else %}
-            <h1>Cadastre-se abaixo e o contactaremos!</h1>
-            <form method="post" class="form_cadastro_contato">
-                {% csrf_token %}
-                {{ form.non_field_errors }}
-                {% for field in form.visible_fields %}
-                <div class="form_cadastro_field">
-                    <label>{{ field.label_tag }}</label>
-                    <div>
-                        {{ field.errors }}
-                        {{ field }}
-                        {{ field.help_text }}
-                    </div>
-                </div>
-                {% endfor %}
-                <input type="submit" value="Cadastrar" class="input-submit-contato">
-            </form>
-            {% endif %}
-        </div>
         <div class="servicos" id="servicos">
             <h1>Serviços Prestados</h1>
             <div class="container-card-servicos">
@@ -78,7 +55,7 @@
                                     <p>Ao final dos trabalhos, será apresentado um relatório detalhado com as
                                         prioridades para alavancar o negócio</p>
                                 </li>
-                                <li><a href="#cadastro_contato"
+                                <li><a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                                         class="button-link">Conheça a realidade do seu negócio!</a></li>
                             </ul>
                         </div>
@@ -107,7 +84,7 @@
                                 <li>
                                     <p>Ao final dos trabalhos, a empresa estará operando independente da consultoria</p>
                                 </li>
-                                <li><a href="#cadastro_contato"
+                                <li><a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                                         class="button-link">Maximize seus resultados!</a></li>
                             </ul>
                         </div>
@@ -134,7 +111,7 @@
                                 <li>
                                     <p>Ferramenta de aplicação, maior dinâmica e objetividade ao processo</p>
                                 </li>
-                                <li><a href="#cadastro_contato"
+                                <li><a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                                         class="button-link">Direcione sua empresa para o sucesso!</a></li>
                             </ul>
                         </div>
@@ -160,7 +137,7 @@
                                 <li>
                                     <p>Definição de premissas macroeconômicas</p>
                                 </li>
-                                <li><a href="#cadastro_contato"
+                                <li><a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                                         class="button-link">Planeje conosco seu futuro!</a></li>
                             </ul>
                         </div>
@@ -202,7 +179,7 @@
                                 <li>
                                     <p>Dimensionado conforme a estrutura da empresa</p>
                                 </li>
-                                <li><a href="#cadastro_contato"
+                                <li><a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                                         class="button-link">Seu time com alta performance!</a></li>
                             </ul>
                         </div>
@@ -232,7 +209,7 @@
                                 <li>
                                     <p>Apoio em negociações relevantes ao negócio</p>
                                 </li>
-                                <li><a href="#cadastro_contato"
+                                <li><a href="https://wa.me/5547991029445?text=Olá,%20gostaria%20de%20entrar%20em%20contato%20para%20falar%20sobre%20um%20dos%20serviços%20oferecidos%20pela%20AllRight%20Consultoria!"
                                         class="button-link">Tenha segurança nas decisões!</a></li>
                             </ul>
                         </div>
